@@ -1,0 +1,16 @@
+---
+
+- hosts: wordpress
+  become: yes
+  gather_facts: yes
+
+  tasks:
+    - name: install PIP python
+      raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+
+  roles:
+    - server
+    - php
+    - mysql
+    - wordpress
+...
