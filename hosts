@@ -1,2 +1,2 @@
 [wordpress]
-wordsite ansible_host=10.0.1.28 ansible_user=root
+wordsite ansible_host=10.0.1.27 ansible_user=root
